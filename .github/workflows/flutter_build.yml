@@ -1,31 +1,40 @@
-name: Flutter Build APK
+name: Build Flutter APK
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
   build:
+    name: Build APK
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      - name: Set up Flutter
+      - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.22.0'
+          flutter-version: '3.22.1'  # أحدث نسخة مستقرة
+          channel: stable
+
+      - name: Enable Flutter web (اختياري)
+        run: flutter config --enable-web
 
       - name: Install dependencies
         run: flutter pub get
 
+      - name: Analyze
+        run: flutter analyze
+
       - name: Build APK
         run: flutter build apk --release
 
-      - name: Upload APK
+      - name: Upload APK artifact
         uses: actions/upload-artifact@v4
         with:
-          name: ladlani-ss-apk
+          name: ladlaniss-apk
           path: build/app/outputs/flutter-apk/app-release.apk
