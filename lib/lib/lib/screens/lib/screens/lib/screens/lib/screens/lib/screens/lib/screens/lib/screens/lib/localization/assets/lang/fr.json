@@ -1,0 +1,21 @@
+{
+  "app_title": "LadlaniSS",
+  "notifications": "Notifications",
+  "settings": "Paramètres",
+  "enable_notifications": "Activer les notifications",
+  "auto_exemption": "Exonération automatique",
+  "language": "Langue",
+  "about": "À propos de l'application",
+  "privacy_policy": "Politique de confidentialité",
+  "terms": "Conditions d'utilisation",
+  "logout": "Déconnexion",
+  "teachers": "Enseignants",
+  "exempted": "Exempté",
+  "save": "Enregistrer",
+  "cancel": "Annuler",
+  "dashboard": "Tableau de bord",
+  "statistics": "Statistiques",
+  "attendance": "Présence",
+  "assign_duty": "Affecter la surveillance",
+  "duty_schedule": "Planning de surveillance"
+}
