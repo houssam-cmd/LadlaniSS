@@ -1,0 +1,21 @@
+{
+  "app_title": "LadlaniSS",
+  "notifications": "الإشعارات",
+  "settings": "الإعدادات",
+  "enable_notifications": "تفعيل الإشعارات",
+  "auto_exemption": "تطبيق الإعفاء تلقائياً",
+  "language": "اللغة",
+  "about": "حول التطبيق",
+  "privacy_policy": "سياسة الخصوصية",
+  "terms": "شروط الاستخدام",
+  "logout": "تسجيل الخروج",
+  "teachers": "الأساتذة",
+  "exempted": "معفى",
+  "save": "حفظ",
+  "cancel": "إلغاء",
+  "dashboard": "لوحة التحكم",
+  "statistics": "إحصائيات",
+  "attendance": "الحضور",
+  "assign_duty": "توزيع الحراسة",
+  "duty_schedule": "جدول الحراسة"
+}
